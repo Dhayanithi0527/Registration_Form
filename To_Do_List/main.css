@@ -12,7 +12,7 @@
     padding: 10px;
 }
 .todo_app{
-    width: 100%;
+    
     max-width: 540px;
     background: white;
     margin:100px auto 20px;
@@ -41,6 +41,7 @@
     justify-content: space-between;
     border-radius: 20px;
     padding-left: 20px;
+    height: 50px;
 }
 button{
     margin-left:150px;
@@ -49,19 +50,36 @@ button{
 input{
     flex: 1;
     border: none;
+    
     outline: none;
     background: transparent;
     font-weight: 15px;
 
 }
-button{
+.add{
     cursor: pointer;
     border-radius: 30%;
-    padding: 15px;
+    width: 50px;
+    height: 50px;
     background-color: rgb(153, 144, 144);
 }
-ul li{
-    list-style: none;
+.checkbox{
+    text-decoration: line-through;
+    color: gray;
+}
+
+.completed {
+    
+    text-decoration: line-through;
+    color: gray;            
+}
+.delete-btn{
+    float: right;
+    width: auto;
+    height: auto;
+   
+}
+li{
     padding: 10px;
-    cursor: pointer;
+    
 }
