@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>REGISTRATION FORM</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+<style>
+    body{
+        background-image: url(download3.jpg);
+        height: 100vh;
+            width: 100%;
+            background-size: cover;
+    }
+    
+    legend{
+        text-align: center;
+        border-radius: 10px;
+        font-weight:bolder ;
+        color: rgb(238, 246, 246);
+    }
+    fieldset{
+        border-radius: 10px;
+    }
+    .form{
+        border-radius: 5px;
+        /* box-shadow: 5px 5px 5px px rgb(143, 210, 222),
+                    inset 5px 5px 5px 8px rgb(183, 226, 230); */
+  
+        width: 800px;
+        /* background-color: white; */
+        margin-left: 250px;
+        margin-top: 70px;
+        color: white;
+        
+    }
+    button{
+        background-color: rgb(127, 167, 193);
+        color: rgb(238, 232, 237);
+        text-decoration: none;
+        border: none;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: rgb(152, 209, 190);
+    }
+    
+    label{
+        font-weight: bold;
+        color: white;
+        
+        
+    }
+   
+</style>
+</head>
+
+<body style="background-color: rgb(216, 208, 208)">; 
+    <div class="rg">
+        <form action="" method="post" target="_blank" class="form">
+        <fieldset>
+            <legend> REGISTRATION FORM</legend>
+        
+        <label for="reg no">Name: </label>
+        <input id="reg no" name="First Name" size="15" placeholder="name" required/>
+
+        <label> Middlename: </label>     
+        <input type="text" name="middlename" placeholder="middlename" size="15"/> 
+        <label> Lastname: </label>         
+        <input type="text" name="lastname" placeholder="lastname" size="15"/> <br> <br> 
+
+        <label for="email">Email:</label>
+        <input id="email" name="Email" placeholder="email" type="email" required> <br> <br>
+        
+        <label> College Name: </label>     
+        <input type="text" name="CollegeName"/>
+        <label> CGPA: </label>     
+        <input type="number" name="CGPA" placeholder="eg.8.5"/><br> <br>
+        <div><b> Gender :</b>
+                     
+                <label for="Male">Male</label>
+                <input id="Male" name="Gender" value="Male" type="radio">
+           
+                <label for="female">Female</label>
+                <input id="female" name="Gender" value="Female" type="radio"/><br/>
+            
+        </div> <br> <br>
+        
+
+    
+
+        <label>Course :  </label>   
+            <select>  
+            <option value="Course">Select</option>  
+            <option value="BCA">Mech</option>  
+            <option value="BBA">Cvil</option>  
+            <option value="B.Tech">EEE</option>  
+            <option value="MBA">ECE</option>  
+            <option value="MCA">CSE</option>  
+            <option value="M.Tech">IT</option>  
+            </select>  
+              
+              
+        </select>
+        <label>  Year of Passing :  </label>     
+            <input type="number" name="YoP" size="4" min="2015" max="2023" placeholder="eg.2020"/> <br> <br>
+    
+        <label>  Phone :  </label>  
+            <input type="text" name="country code"  value="+91" size="2"/>   
+            <input type="text" name="phone" size="10"/> <br> <br>
+        
+        <label for="psw">Password</label>  
+        <input type="password" placeholder="Enter Password" name="psw" required>  
+  
+        <label for="psw-repeat">Re-type Password</label>  
+        <input type="password" placeholder="Retype Password" name="psw-repeat" required> <br> <br>  
+        
+        <textarea placeholder="Address"></textarea> <br> <br>
+        
+        <form action="/action_page.php"><b>Upload Resume</b>
+            <input type="file" id="myFile" name="filename">
+            
+        </form>
+        <button type="submit" class="registerbtn">Register</button> <br> <br>
+
+    </fieldset>
+
+        </form>
+    </div>    
+</body>
+</html>
